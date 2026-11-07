@@ -1,0 +1,44 @@
+name: Multi-Repo Sentinel Tracker
+
+on:
+  schedule:
+    - cron: '0 6 * * *'       # 06:00 UTC -> 13:00 WIB
+    - cron: '0 18 * * *'      # 18:00 UTC -> 01:00 WIB
+    - cron: '0 0 * * *'       # 00:00 UTC -> 07:00 WIB (Baru)
+    - cron: '0 12 * * *'      # 12:00 UTC -> 19:00 WIB (Baru)
+  workflow_dispatch:          # Pemicu manual dari tab Actions
+
+permissions:
+  contents: write
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run Tracker
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          # Tambahkan secret webhook per-channel/thread di bawah ini:
+        run: python tracker.py
+
+      - name: Commit and Push State
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state.json
+          git diff --staged --quiet || (git commit -m "chore: sync state.json [skip ci]" && git push)
