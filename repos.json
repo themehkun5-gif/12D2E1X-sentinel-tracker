@@ -3,5 +3,10 @@
     "repo": "desktop/desktop",
     "branch": "development",
     "thread_id": "1568477036287238212"
+  },
+  {
+    "repo": "nousresearch/hermes-agent",
+    "branch": "main",
+    "thread_id": "1569269257571663892"
   }
 ]
