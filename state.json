@@ -3,5 +3,10 @@
     "last_commit": "1bfab971ad2d373d5ef996dda2b894232658f8f6",
     "last_release_id": 432804033,
     "last_pr_number": 23144
+  },
+  "nousresearch/hermes-agent#main": {
+    "last_commit": "8531ae7bb0dd02990ab459c37d5a8e39f8b2e9e8",
+    "last_release_id": 435665175,
+    "last_pr_number": 151834
   }
 }
