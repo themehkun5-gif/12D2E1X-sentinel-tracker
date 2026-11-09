@@ -1,12 +1,12 @@
 {
   "desktop/desktop#development": {
-    "last_commit": "1bfab971ad2d373d5ef996dda2b894232658f8f6",
+    "last_commit": "04149df157ab6d6ef358546295cc271175a60498",
     "last_release_id": 432804033,
     "last_pr_number": 23144
   },
   "nousresearch/hermes-agent#main": {
-    "last_commit": "8531ae7bb0dd02990ab459c37d5a8e39f8b2e9e8",
+    "last_commit": "a270b24bab474b3a7bdc51c24d918cec086fe9bc",
     "last_release_id": 435665175,
-    "last_pr_number": 151834
+    "last_pr_number": 151928
   }
 }
