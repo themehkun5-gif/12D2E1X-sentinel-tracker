@@ -8,5 +8,10 @@
     "repo": "nousresearch/hermes-agent",
     "branch": "main",
     "thread_id": "1569269257571663892"
+  },
+  {
+    "repo": "decolua/9router",
+    "branch": "master",
+    "thread_id": "1569845611555979315"
   }
 ]
