@@ -1,17 +1,17 @@
 {
   "desktop/desktop#development": {
-    "last_commit": "35f595021b3e67d5253c8b6ad4de8871d15ea810",
-    "last_release_id": 456566428,
+    "last_commit": "e58953b6e8bd77729dc253e074c0fd9fb5391f03",
+    "last_release_id": 459472944,
     "last_pr_number": 23241
   },
   "nousresearch/hermes-agent#main": {
-    "last_commit": "04be1bc06ba9fb3a7326679b0036bb65daaeda85",
+    "last_commit": "f88d579f9120322a193860a2bb5ceb34491b1271",
     "last_release_id": 457745381,
-    "last_pr_number": 160438
+    "last_pr_number": 160532
   },
   "decolua/9router#master": {
     "last_commit": "5ae63d22847e07042e235b40e1d926b65e509013",
     "last_release_id": 355036467,
-    "last_pr_number": 5874
+    "last_pr_number": 5882
   }
 }
