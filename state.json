@@ -5,13 +5,13 @@
     "last_pr_number": 23241
   },
   "nousresearch/hermes-agent#main": {
-    "last_commit": "02f83f432d6f473202b2d3d2db0368d3cee2b46c",
+    "last_commit": "1d15aad1dfa8e9e5fcbd2082cad5666a0907a07d",
     "last_release_id": 457745381,
-    "last_pr_number": 160611
+    "last_pr_number": 160683
   },
   "decolua/9router#master": {
     "last_commit": "5ae63d22847e07042e235b40e1d926b65e509013",
     "last_release_id": 355036467,
-    "last_pr_number": 5887
+    "last_pr_number": 5904
   }
 }
